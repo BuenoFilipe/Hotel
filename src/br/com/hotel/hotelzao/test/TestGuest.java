@@ -28,6 +28,10 @@ public class TestGuest {
         Guest g3 = Guest.create("Olavo", "222.333.111-02","pro player",19,"Rua joaquim",33,"Rio de janeiro","RJ");
         g3.mostrarInformacoes();
 
+        System.out.println("Total of Guests: " + Guest.getTotalGuest());
+
     }
+
+
 
 }
