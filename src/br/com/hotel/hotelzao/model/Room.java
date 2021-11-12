@@ -6,6 +6,7 @@ public abstract class Room {
 
     private String numero;
     private double valor;
+    private Bed bed;
 
     ArrayList <RoomStandard> roomStandard = new ArrayList<RoomStandard>(10);
 

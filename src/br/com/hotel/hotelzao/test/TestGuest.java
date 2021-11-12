@@ -7,7 +7,7 @@ public class TestGuest {
 
     public static void main(String[] args) {
 
-        Guest g1 = Guest.create("João", "111.111.111-11", "Picanhero", 29, "Rua dos medonhos", 400, "Mezopotamia", "Acre");
+        Guest g1 = Guest.create("João", "111.111.111-11", "Rua jiraya");
 
 //        System.out.println(g1.getFullName());
 //        System.out.println(g1.getAge());
