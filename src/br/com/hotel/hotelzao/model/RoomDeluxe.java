@@ -1,11 +1,10 @@
 package br.com.hotel.hotelzao.model;
 
-import java.util.ArrayList;
-
 public class RoomDeluxe extends Room {
 
+    private Bed bed;
 
+    public RoomDeluxe () {
 
-
-
+    }
 }
