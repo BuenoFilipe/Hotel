@@ -6,5 +6,7 @@ public class RoomDeluxe extends Room {
 
     public RoomDeluxe () {
 
+
+
     }
 }

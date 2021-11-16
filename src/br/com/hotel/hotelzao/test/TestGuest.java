@@ -1,23 +1,14 @@
 package br.com.hotel.hotelzao.test;
 
-import br.com.hotel.hotelzao.model.Adress;
 import br.com.hotel.hotelzao.model.Guest;
+
+import java.util.ArrayList;
 
 public class TestGuest {
 
     public static void main(String[] args) {
 
-        Guest g1 = Guest.create("João", "111.111.111-11", "Rua jiraya");
-
-//        System.out.println(g1.getFullName());
-//        System.out.println(g1.getAge());
-//        System.out.println(g1.getOccupation());
-//        System.out.println(g1.getDocument());
-//        System.out.println("---------------------");
-//        System.out.println(g1.getAdress().getStreet());
-//        System.out.println(g1.getAdress().getNumber());
-//        System.out.println(g1.getAdress().getCity());
-//        System.out.println(g1.getAdress().getState());
+        Guest g1 = Guest.create("João", "111.111.111-11", "Rua jiraya",32,"Rua Dezesseis",191,"Guarulhos","SP");
 
         g1.mostrarInformacoes();
 
@@ -29,6 +20,17 @@ public class TestGuest {
         g3.mostrarInformacoes();
 
         System.out.println("Total of Guests: " + Guest.getTotalGuest());
+
+        ArrayList<Guest> guests = new ArrayList<>();
+        guests.add(0, g1);
+
+        System.out.println("******** Arrays ********");
+
+        System.out.println(guests.size());
+
+        Guest ref = guests.get(0);
+        System.out.println(ref.mostrarInformacoes());
+
 
     }
 

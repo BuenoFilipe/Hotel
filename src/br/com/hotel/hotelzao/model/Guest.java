@@ -66,7 +66,7 @@ public class Guest {
 
 
 //criamos um metodo pra imprimir tudo de uma vez
-    public void mostrarInformacoes () {
+    public String mostrarInformacoes () {
 
         System.out.println(this.getFullName());
         System.out.println(this.getAge());
@@ -79,6 +79,7 @@ public class Guest {
         System.out.println(this.adress.getState());
         System.out.println("---------------------");
 
+        return null;
     }
 
     //refactor Extract Method, encapsulamo dois News em um método la na Classe TestGuest, que ai copiei e colei
