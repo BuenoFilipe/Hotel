@@ -9,7 +9,11 @@ public class Guest {
     private Adress adress;
     private static int totalGuest = 0;
 
-    public Guest(String fullName, String document, String occupation, int age,Adress adress) {
+    public static int getTotalGuest() {
+        return totalGuest;
+    }
+
+    public Guest(String fullName, String document, String occupation, int age, Adress adress) {
         Guest.totalGuest++;
 
         this.fullName = fullName;
@@ -62,7 +66,7 @@ public class Guest {
 
 
 //criamos um metodo pra imprimir tudo de uma vez
-    public void mostrarInformacoes () {
+    public String mostrarInformacoes () {
 
         System.out.println(this.getFullName());
         System.out.println(this.getAge());
@@ -75,6 +79,7 @@ public class Guest {
         System.out.println(this.adress.getState());
         System.out.println("---------------------");
 
+        return null;
     }
 
     //refactor Extract Method, encapsulamo dois News em um método la na Classe TestGuest, que ai copiei e colei
