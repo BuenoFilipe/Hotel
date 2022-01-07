@@ -16,4 +16,9 @@ public enum Bed {
     public String getTipoCama() {
         return tipoCama;
     }
+
+    public void setTipoCama(String tipoCama) {
+        this.tipoCama = tipoCama;
+
+    }
 }

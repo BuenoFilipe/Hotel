@@ -1,6 +1,10 @@
 package br.com.hotel.hotelzao.test;
 
+import br.com.hotel.hotelzao.model.Bed;
 import br.com.hotel.hotelzao.model.Guest;
+import br.com.hotel.hotelzao.model.Room;
+import br.com.hotel.hotelzao.model.RoomDeluxe;
+import sun.security.provider.NativePRNG;
 
 import java.util.ArrayList;
 
@@ -30,6 +34,7 @@ public class TestGuest {
 
         Guest ref = guests.get(0);
         System.out.println(ref.mostrarInformacoes());
+
 
 
     }

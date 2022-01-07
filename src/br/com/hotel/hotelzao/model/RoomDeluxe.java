@@ -4,9 +4,7 @@ public class RoomDeluxe extends Room {
 
     private Bed bed;
 
-    public RoomDeluxe () {
-
-
+    public RoomDeluxe (String bed) {
 
     }
 }
